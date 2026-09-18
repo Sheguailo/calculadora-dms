@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora DMS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <h1>Calculadora DMS</h1>
+    <p class="subtitulo">Calcula tu comisión estimada</p>
+
+    <section class="tarjeta">
+
+        <h2>1. Datos generales</h2>
+
+        <label>Cartera de PDV</label>
+        <input type="number" id="cartera" min="1" placeholder="Ej. 120">
+
+        <div id="variable" class="resultado-variable">
+            Ingresa tu cartera
+        </div>
+
+    </section>
+
+
+    <section class="tarjeta">
+
+        <h2>2. KPIs</h2>
+
+        <label>Efectividad de venta (%)</label>
+        <input type="number" id="efectividad" min="0" step="0.1" placeholder="Ej. 75">
+
+        <label>Meta colocación</label>
+        <input type="number" id="metaColocacion" min="0" placeholder="Ej. 300">
+
+        <label>Colocación realizada</label>
+        <input type="number" id="colocacion" min="0" placeholder="Ej. 285">
+
+        <label>Meta paquete foco</label>
+        <input type="number" id="metaFoco" min="0" placeholder="Ej. 100">
+
+        <label>Paquete foco realizado</label>
+        <input type="number" id="foco" min="0" placeholder="Ej. 120">
+
+        <label>Meta puntos tranzando con tráfico</label>
+        <input type="number" id="metaTrafico" min="0" placeholder="Ej. 80">
+
+        <label>Puntos tranzando con tráfico</label>
+        <input type="number" id="trafico" min="0" placeholder="Ej. 76">
+
+    </section>
+
+
+    <section class="tarjeta">
+
+        <h2>3. Indicadores BOC</h2>
+
+        <label>Horas en ruta</label>
+        <input type="number" id="horasRuta" min="0" step="0.1" placeholder="Ej. 6.5">
+
+        <label>Puntos cercanos (%)</label>
+        <input type="number" id="puntosCercanos" min="0" step="0.1" placeholder="Ej. 92">
+
+        <label>Quiebre (%)</label>
+        <input type="number" id="quiebre" min="0" step="0.1" placeholder="Ej. 1.5">
+
+        <label>Efectividad de visita (%)</label>
+        <input type="number" id="efectividadVisita" min="0" step="0.1" placeholder="Ej. 96">
+
+    </section>
+
+
+    <section class="tarjeta">
+
+        <h2>4. Adicionales</h2>
+
+        <label>Hallazgos (%)</label>
+        <input type="number" id="hallazgos" min="0" step="0.1" placeholder="Ej. 85">
+
+        <label>Puntos nuevos</label>
+        <input type="number" id="puntosNuevos" min="0" placeholder="Ej. 10">
+
+        <label>Gross en PDV diferentes</label>
+        <input type="number" id="grossPDV" min="0" placeholder="Ej. 80">
+
+    </section>
+
+
+    <button onclick="calcular()">CALCULAR COMISIÓN</button>
+
+
+    <section id="resultado" class="resultado">
+        <h2>Tu comisión estimada</h2>
+
+        <div id="total" class="total">
+            $0
+        </div>
+
+        <div id="detalle"></div>
+    </section>
+
+</div>
+
+<script src="calculadora.js"></script>
+
+</body>
+</html>
