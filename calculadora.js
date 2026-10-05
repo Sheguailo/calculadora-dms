@@ -183,7 +183,7 @@ function calcular() {
 
     let adicionales = 0;
 
-    if (hallazgos > 80) {
+    if (hallazgos >= 80) {
         adicionales += 50000;
     }
 
