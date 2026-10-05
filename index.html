@@ -11,7 +11,7 @@
 
 <div class="contenedor">
 
-    <h1>Calculadora DMS</h1>
+    <h1>Calculadora Comisiones Asesores</h1>
     <p class="subtitulo">Calcula tu comisión estimada</p>
 
     <section class="tarjeta">
@@ -32,25 +32,25 @@
 
         <h2>2. KPIs</h2>
 
-        <label>Efectividad de venta (%)</label>
+        <label>Efectividad de venta (%) (Piso 60% - Techo 85%)</label>
         <input type="number" id="efectividad" min="0" step="0.1" placeholder="Ej. 75">
 
         <label>Meta colocación</label>
         <input type="number" id="metaColocacion" min="0" placeholder="Ej. 300">
 
-        <label>Colocación realizada</label>
+        <label>Colocación realizada (Piso 90% - Techo 120%)</label>
         <input type="number" id="colocacion" min="0" placeholder="Ej. 285">
 
         <label>Meta paquete foco</label>
         <input type="number" id="metaFoco" min="0" placeholder="Ej. 100">
 
-        <label>Paquete foco realizado</label>
+        <label>Paquete foco realizado (Piso 90% - Techo 150%)</label>
         <input type="number" id="foco" min="0" placeholder="Ej. 120">
 
         <label>Meta puntos tranzando con tráfico</label>
         <input type="number" id="metaTrafico" min="0" placeholder="Ej. 80">
 
-        <label>Puntos tranzando con tráfico</label>
+        <label>Puntos tranzando con tráfico (Piso 90% - Techo 110%)</label>
         <input type="number" id="trafico" min="0" placeholder="Ej. 76">
 
     </section>
@@ -60,16 +60,16 @@
 
         <h2>3. Indicadores BOC</h2>
 
-        <label>Horas en ruta</label>
+        <label>Horas en ruta (>=6horas)</label>
         <input type="number" id="horasRuta" min="0" step="0.1" placeholder="Ej. 6.5">
 
-        <label>Puntos cercanos (%)</label>
+        <label>Puntos cercanos (%) (>=90%)</label>
         <input type="number" id="puntosCercanos" min="0" step="0.1" placeholder="Ej. 92">
 
         <label>Quiebre (%)</label>
         <input type="number" id="quiebre" min="0" step="0.1" placeholder="Ej. 1.5">
 
-        <label>Efectividad de visita (%)</label>
+        <label>Efectividad de visita (%) (>=95%)</label>
         <input type="number" id="efectividadVisita" min="0" step="0.1" placeholder="Ej. 96">
 
     </section>
@@ -79,13 +79,13 @@
 
         <h2>4. Adicionales</h2>
 
-        <label>Hallazgos (%)</label>
+        <label>Hallazgos (>=80%)</label>
         <input type="number" id="hallazgos" min="0" step="0.1" placeholder="Ej. 85">
 
-        <label>Puntos nuevos</label>
+        <label>Puntos nuevos (>=10)</label>
         <input type="number" id="puntosNuevos" min="0" placeholder="Ej. 10">
 
-        <label>Gross en PDV diferentes</label>
+        <label>Gross en PDV diferentes (80 puntos diferentes)</label>
         <input type="number" id="grossPDV" min="0" placeholder="Ej. 80">
 
     </section>
